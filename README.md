@@ -20,7 +20,7 @@ pass in an output dir
 Program Steps
 -------------
 * Loop through all mounted volumes
-* look in hidden directory .DocumentRevisions-V100
+* Look in hidden directory .DocumentRevisions-V100
 * Decide if this is the boot drive or a mounted drive. The directory layout is different.
 * Open the db.sqlite file in /.DocumentRevisions-V100/db-v1
     * In the files table, find the file_storage_id
@@ -33,6 +33,7 @@ Program Steps
         * the file located in .cs/ChunkStorage directory is ft_rowid
         * store the offset
         * store datalen
+
 Extract the file data from the ChunkStorage directory by opening files, reading to offsets, and writing out the filename with a version stamp after it. Write to the output directory.
 
 
