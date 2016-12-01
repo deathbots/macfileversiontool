@@ -1,0 +1,23 @@
+*.pyc
+stats.db
+*.swo
+*.swp
+
+# mac
+.DS_Store
+
+# Logs
+logs
+*.log
+
+# SQL
+*.db
+
+# IDEA/WebStorm project files
+.idea
+*.iml
+
+/version/
+/test
+
+
