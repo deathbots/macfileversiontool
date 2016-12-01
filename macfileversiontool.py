@@ -22,12 +22,6 @@ def print_stderr(*args, **kwargs):
 
 
 if __name__ == '__main__':
-    if platform.system() != 'Darwin':
-        print_stderr('This must be run on a MacOS system', bail=True)
-    mac_ver = platform.mac_ver()[0]
-    print('Mac version {}'.format(mac_ver))
-    mac_minor = mac_ver.split('.')[1]
-    print('Mac minor version is {}'.format(mac_minor))
-    if int(mac_minor) < 7:
-        print_stderr('MacOS < version 10.7, there are no local file versions available.', bail=True)
+    # todo: how to loop through and find the mounted dirs. Might need a flag for that.
+
     print('I live')
